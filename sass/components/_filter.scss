@@ -1,0 +1,32 @@
+.filter {
+    display: flex;
+    justify-content: center;
+}
+
+.filter__button {
+    padding: 6px 25px;
+
+    font-weight: 500;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    background: var(--portfolio-bg-color);
+
+    transition: background-color var(--transitions-time) var(--transitions),
+        color var(--transitions-time) var(--transitions),
+        box-shadow var(--transitions-time) var(--transitions);
+
+    &:hover {
+        background-color: var(--interactive-color);
+        color: var(--text-color-on-dark-bg);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+            0px 2px 2px rgba(0, 0, 0, 0.12);
+    }
+}
+
+.filter__item {
+    &:not(:first-child) {
+        margin-left: 8px;
+    }
+}

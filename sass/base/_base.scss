@@ -1,0 +1,53 @@
+.container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+
+    @media screen and (min-width:$mobileWidth) {
+        width: $mobileWidth;
+    }
+
+    @media screen and (min-width:$tabletWidth) {
+        width: $tabletWidth;
+    }
+
+    @media screen and (min-width:$desctopWidth) {
+        width: $desctopWidth;
+    }
+}
+
+.section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width:$desctopWidth) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+}
+
+.subtitle {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 1.17;
+    text-align: center;
+
+    @media screen and (min-width:$desctopWidth) {
+        font-size: 36px;
+        line-height: 1.16;
+    }
+}
+
+@mixin setFlexBasis($indent, $elements) {
+    flex-basis: calc((100% - ($elements - 1) * $indent) / $elements);
+}
+
+.link--interactive {
+    transition: color var(--transitions-time) var(--transitions);
+
+    &:hover,
+    &:focus {
+        color: var(--interactive-color);
+    }
+}

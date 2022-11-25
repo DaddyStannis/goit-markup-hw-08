@@ -1,0 +1,33 @@
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.header__wrapper {
+    display: flex;
+    
+    @media screen and (min-width:$tabletWidth) {
+        gap: 87px;
+    }
+
+    @media screen and (min-width:$desctopWidth) {
+        gap: 93px;
+    }
+}
+
+.logo__left--header-style {
+    color: var(--interactive-color);
+}
+
+.logo__right--header-style {
+    color: var(--main-text-color);
+}
+
+.header__mobile-menu {
+    width: 40px;
+    height: 40px;
+    padding: 8px 12px;
+}

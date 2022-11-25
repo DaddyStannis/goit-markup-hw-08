@@ -1,0 +1,27 @@
+:root {
+    --main-text-color: #212121;
+    --secondary-text-color: #757575;
+    --interactive-color: #2196f3;
+    --bg-color: #2f303a;
+    --text-color-on-dark-bg: #ffffff;
+    --addr-color: rgba(255, 255, 255, 0.6);
+    --portfolio-bg-color: #f5f4fa;
+    --svg-default-color: #afb1b8;
+    --portfolio-light: #eeeeee;
+    --modal-field-border: rgba(33, 33, 33, 0.2);
+    --modal-textarea-placeholder: rgba(117, 117, 117, 0.5);
+    --footer-social-networks-link: rgba(255, 255, 255, 0.1);
+    --overlay: rgba(47, 48, 58, 0.4);
+    --backdrop-bg-color: rgba(0, 0, 0, 0.2);
+    --subscribe-form-placeholder: rgba(255, 255, 255, 0.6);
+    --what-we-do-bg-color: rgba(47, 48, 58, 0.8);
+    --transitions: cubic-bezier(0.4, 0, 0.2, 1);
+    --transitions-time: 250ms;
+
+    --main-font: "Roboto";
+    --secondary-font: "Raleway";
+}
+
+$mobileWidth: 479.99px;
+$tabletWidth: 767.99px;
+$desctopWidth: 1199.99px;

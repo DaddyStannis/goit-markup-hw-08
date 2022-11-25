@@ -1,0 +1,62 @@
+.staff-section {
+    background-color: var(--portfolio-bg-color);
+}
+
+.staff {
+    margin-top: 30px;
+
+    @media screen and (min-width:$tabletWidth) {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    @media screen and (min-width:$desctopWidth) {
+        width: $desctopWidth;
+        margin-top: 50px;
+    } 
+}
+
+.staff__card {
+    padding-bottom: 30px;
+
+    background-color: #ffffff;
+    border-radius: 0px 0px 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+
+    @media screen and (min-width:$tabletWidth) {
+        @include setFlexBasis(30px, 2);
+    }
+
+    @media screen and (min-width:$desctopWidth) {
+        @include setFlexBasis(30px, 4);
+    }
+}
+
+.staff__photo {
+    width: 100%;
+
+    background-color: var(--secondary-text-color);
+}
+
+.staff__name {
+    margin-top: 30px;
+
+    font-weight: 500;
+    line-height: 1.18;
+    text-align: center;
+}
+
+.staff__position {
+    margin-top: 10px;
+
+    line-height: 1.18;
+    text-align: center;
+
+    color: var(--secondary-text-color);
+}
+
+.social-networks__link--staff-section-style {
+    color: var(--svg-default-color);
+}
